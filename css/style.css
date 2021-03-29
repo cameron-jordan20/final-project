@@ -1,0 +1,234 @@
+@media all and (max-width: 400px) {
+  /*navbar*/
+  header .navbar {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  header .navbar a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+    padding: 20px 0px;
+    margin: 0px 20px;
+  }
+  header .navbar .active {
+    color: #6c9dd4;
+  }
+
+  .line {
+    display: none;
+  }
+  .image {
+    max-width: 100%;
+  }
+
+  .right h2 {
+    text-align: center;
+  }
+  .right div {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    list-style-type: none;
+    position: relative;
+    font-size: 1.5rem;
+    background: inherit;
+    color: black;
+  }
+  .right h3 {
+    font-size: 1.65rem;
+    text-align: center;
+  }
+  .right h4 {
+    position: relative;
+  }
+  .right p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-top: 15px;
+  }
+
+  .contact {
+    margin-bottom: 50px;
+  }
+
+  .contact a{
+    text-decoration: none;
+    color: black;
+    align-self: center;
+
+    display: grid;
+    align-self: center;
+  }
+}
+
+@media all and (min-width: 401px) and (max-width: 767px) {
+  /*navbar*/
+  header .navbar {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  header .navbar a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    padding: 20px 0px;
+    margin: 0px 20px;
+  }
+  header .navbar .active {
+    color: #6c9dd4;
+  }
+
+  .line {
+    display: none;
+  }
+  .image {
+    max-width: 100%;
+  }
+
+  .right h2 {
+    text-align: center;
+  }
+  .right div {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    list-style-type: none;
+    position: relative;
+    font-size: 1.5rem;
+    background: inherit;
+    color: black;
+  }
+  .right h3 {
+    font-size: 1.65rem;
+    text-align: center;
+  }
+  .right h4 {
+    position: relative;
+  }
+  .right p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-top: 15px;
+  }
+
+  .contact a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .contact {
+    margin-bottom: 50px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  /*navbar*/
+  .navbar {
+    margin: none;
+    padding: none;
+    overflow: hidden;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2.5px;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+  }
+  .navbar a:hover {
+    color: #6c9dd4;
+  }
+  .navbar a::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #6c9dd4;
+    width: 100%;
+    bottom: 3px;
+    opacity: 0;
+  }
+  .navbar a:hover::before {
+    bottom: 5px;
+    opacity: 1;
+  }
+  .navbar .active {
+    color: #6c9dd4;
+  }
+
+  /* index.html */
+  .homepage {
+    display: grid;
+    grid-template:
+    "image txt right"
+    "image txt right"
+    "contact contact right";
+    grid-gap: 1%;
+  }
+  .image {
+    grid-area: image;
+  }
+  .text {
+    grid-area: txt;
+    display: grid;
+    place-items: center;
+    line-height: 25px;
+  }
+  .right {
+    grid-area: right;
+  }
+  .contact {
+    grid-area: contact;
+    text-align: center;
+  }
+  .contact a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .right h2 {
+    text-align: center;
+  }
+  .right div {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    list-style-type: none;
+    position: relative;
+    font-size: 1.5rem;
+    background: inherit;
+    color: black;
+  }
+  .right h3 {
+    font-size: 1.65rem;
+    text-align: center;
+  }
+  .right h4 {
+    position: relative;
+  }
+  .right p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-top: 15px;
+  }
+}
